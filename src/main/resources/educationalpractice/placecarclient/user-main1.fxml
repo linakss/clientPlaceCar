@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="870.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educationalpractice.placecarclient.Controller.UserMain1">
+    <children>
+        <Pane layoutX="-14.0" prefHeight="570.0" prefWidth="165.0" style="-fx-background-radius: 18px; -fx-background-color: #A6A6A6;">
+            <children>
+                <Button fx:id="btnOpenCar" layoutX="28.0" layoutY="136.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenCar" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Автомобиль" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Text fx:id="whoUser" fill="#545454" layoutX="48.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО юзера">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="btnOpenProfile" layoutX="28.0" layoutY="95.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenProfile" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Профиль" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Text fill="#545454" layoutX="210.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Схема парковочных мест:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="btnOpenPMs" layoutX="255.0" layoutY="377.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenPMs" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Открыть ряд" textFill="#545454">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Pane layoutX="508.0" layoutY="98.0" prefHeight="190.0" prefWidth="300.0" style="-fx-background-color: #A6A6A6; -fx-background-radius: 15; -fx-border-color: #F2F2F2; -fx-border-radius: 15; -fx-border-style: dashed;">
+         <children>
+              <Text fill="#f2f2f2" layoutX="15.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*стоимость ">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Text>
+              <Text fill="#545454" layoutX="18.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABCDEFJKOPTUVWXY - 8 руб/мин" />
+            <Text fill="#545454" layoutX="18.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GHILMNQRS - 5 руб/мин" />
+              <Text fill="#f2f2f2" layoutX="15.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*обозначения">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Text>
+              <Text fx:id="greenPm" fill="#00ff1e" layoutX="18.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В данном ряду все места свободны">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+            </Text>
+              <Text fx:id="yellowPm" fill="#ffee00" layoutX="18.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В данном ряду все места забронированы">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+            </Text>
+              <Text fx:id="redPm" fill="RED" layoutX="18.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В данном ряду все места уже заняты">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+            </Text>
+         </children></Pane>
+        <Button fx:id="btnCancelRyadPM" layoutX="255.0" layoutY="417.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnCancelRyadPM" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Отмена" textFill="#545454">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Pane layoutX="200.0" layoutY="75.0" prefHeight="235.0" prefWidth="235.0" style="-fx-background-color: #A6A6A6; -fx-background-radius: 15; -fx-border-color: #F2F2F2; -fx-border-radius: 15; -fx-border-style: dashed;">
+            <children>
+                <GridPane fx:id="gridPanel" layoutX="18.0" layoutY="16.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="OnNumberPMa" layoutX="10.0" layoutY="10.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPMa" prefWidth="40.0" text="A">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="OnNumberPMb" layoutX="40.0" layoutY="40.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPMb" prefWidth="40.0" text="B" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM9" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="I" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM6" layoutX="40.0" layoutY="10.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="F" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM7" layoutX="10.0" layoutY="10.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="G" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM8" layoutX="70.0" layoutY="10.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="H" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM3" layoutX="70.0" layoutY="40.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="C" GridPane.columnIndex="2">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM4" layoutX="130.0" layoutY="40.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="D" GridPane.columnIndex="3">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM5" layoutX="130.0" layoutY="40.0" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="E" GridPane.columnIndex="4">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="numberPM10" layoutX="130.0" layoutY="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefHeight="40.0" prefWidth="40.0" text="J" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="numberPM61" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="K" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM62" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="L" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM63" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="M" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM64" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="N" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM65" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="O" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM66" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="P" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM67" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="Q" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM68" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="R" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM69" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="S" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM610" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="T" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM611" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="U" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM612" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="V" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM613" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="W" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM614" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="X" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="numberPM615" minHeight="40.0" mnemonicParsing="false" onAction="#OnNumberPM1" prefWidth="40.0" text="Y" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </Pane>
+        <QuadCurve controlX="99.0" controlY="-103.0" endX="161.0" endY="-97.0" fill="#1f93ff00" layoutX="387.0" layoutY="153.0" startX="50.3358154296875" startY="-72.48429870605469" stroke="#f2f2f2" strokeType="INSIDE" />
+        <Line endX="14.75" endY="15.5" layoutX="443.0" layoutY="63.0" startX="-5.6641845703125" startY="17.515701293945312" stroke="#f2f2f2" />
+        <Line endX="13.0" endY="16.0" layoutX="438.0" layoutY="51.0" startX="0.04290771484375" startY="28.80859375" stroke="#f2f2f2" />
+        <Text fill="#f2f2f2" layoutX="552.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*кликни по одному из рядов ПМ" />
+      <ImageView fitHeight="200.0" fitWidth="300.0" layoutX="508.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../manCar.gif" />
+         </image>
+      </ImageView>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="750.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educationalpractice.placecarclient.Controller.AdminEmployeeEdit">
+    <children>
+        <Text fill="#545454" layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Профиль:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="save" layoutX="14.0" layoutY="326.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnEditProfile" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Сохранить" textFill="#545454">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancel" layoutX="616.0" layoutY="326.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnCancelProfile" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Отмена" textFill="#545454">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Text fill="#545454" layoutX="360.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeNameProfile" layoutX="300.0" layoutY="90.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="354.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeLoginProfile" layoutX="300.0" layoutY="170.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="595.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokePasswordProfile" layoutX="545.0" layoutY="170.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="47.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рабочий номер телефона:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeNumberPhoneProfile" layoutX="55.0" layoutY="170.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="590.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeLactNameProfile" layoutX="545.0" layoutY="90.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="100.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeSurnameProfile" layoutX="55.0" layoutY="90.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+      <Text fill="#545454" layoutX="360.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Роль:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="strokeRoleProfile" layoutX="300.0" layoutY="250.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #545454; -fx-border-style: dashed;" />
+    </children>
+</AnchorPane>

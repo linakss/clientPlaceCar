@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="870.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educationalpractice.placecarclient.Controller.AdminMain">
+   <children>
+      <Pane layoutX="-14.0" prefHeight="570.0" prefWidth="165.0" style="-fx-background-radius: 18px; -fx-background-color: #A6A6A6;">
+         <children>
+            <Button fx:id="btnOpenCars" layoutX="28.0" layoutY="135.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenCars" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Автомобили" textFill="#545454">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fx:id="whoUser" fill="#545454" layoutX="55.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adminko1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnOpenEmployee" layoutX="28.0" layoutY="95.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenEmployee" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Сотрудники" textFill="#545454">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="#545454" layoutX="175.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Парковочные места:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#545454" layoutX="613.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABCDEFJKOPTUVWXY - 8 руб/мин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#545454" layoutX="635.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GHILMNQRS - 5 руб/мин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="tableContainer" layoutX="523.0" layoutY="46.0" prefHeight="360.0" prefWidth="305.0" />
+      <Text fill="#545454" layoutX="178.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о ПМ:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="textFIO" fill="#545454" layoutX="180.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия Имя Отчество гостя" />
+      <Text fx:id="textEntryDeparture" fill="#545454" layoutX="180.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Въезд/Выезд гостя" />
+   </children>
+</AnchorPane>

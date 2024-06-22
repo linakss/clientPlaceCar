@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="870.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educationalpractice.placecarclient.Controller.UserCard">
+    <children>
+        <Pane layoutX="-14.0" prefHeight="570.0" prefWidth="165.0" style="-fx-background-radius: 18px; -fx-background-color: #A6A6A6;">
+            <children>
+                <Button fx:id="btnOpenCarUser" layoutX="28.0" layoutY="175.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenCarUser" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Профиль" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Text fx:id="whoUser" fill="#545454" layoutX="48.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО юзера">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="btnOpenCarUser" layoutX="28.0" layoutY="135.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenCarUser" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Автомобиль" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnHelp" layoutX="28.0" layoutY="527.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnHelp" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Помощь" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            <Button fx:id="btnOpenHomeUser" layoutX="28.0" layoutY="95.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenHomeUser" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Главная" textFill="#545454">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+        <Text fill="#545454" layoutX="200.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Бронь:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер карты:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtNumberCard" fill="#545454" layoutX="515.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="хххх хххх хххх хххх">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Срок действия:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtSrokCard" fill="#545454" layoutX="515.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01/25">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя и фамилия владельца карты: ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtNameCard" fill="#545454" layoutX="515.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IVANOV IVAN">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVC/CVV:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtCVVCard" fill="#545454" layoutX="515.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="123">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Аренда парковочного места: ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtPMAndPrice" fill="#545454" layoutX="515.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В3, 8 руб/мин">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Мы принимаем: ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="515.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VISA, MasterCard, American Express, МИР">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtPMJProfile1" fill="#f2f2f2" layoutX="589.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*проверьте, пожалуйста, свои данные!">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fill="#545454" layoutX="200.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Арендуемое время: ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtTimeBron" fill="#545454" layoutX="515.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 часа">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+      <Text fill="#545454" layoutX="200.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банк:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtBankCard" fill="#545454" layoutX="515.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тинькофф">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#545454" layoutX="200.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Итого к оплате: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSumma" fill="#545454" layoutX="515.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="960 руб.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnOpenEdtCard" layoutX="200.0" layoutY="480.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenEdtCard" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Редактировать" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNext" layoutX="350.0" layoutY="480.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnNext" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Далее" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelBron" layoutX="600.0" layoutY="480.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnCancelBron" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Отмена" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

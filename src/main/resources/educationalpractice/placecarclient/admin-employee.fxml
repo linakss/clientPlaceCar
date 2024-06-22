@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="870.0" style="-fx-background-color: #CFCFCF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educationalpractice.placecarclient.Controller.AdminEmployee">
+    <children>
+        <Pane layoutX="-14.0" prefHeight="570.0" prefWidth="165.0" style="-fx-background-radius: 18px; -fx-background-color: #A6A6A6;">
+            <children>
+                <Button fx:id="btnOpenCars" layoutX="29.0" layoutY="136.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#OpenCars" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Автомобили" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Text fx:id="whoUser" fill="#545454" layoutX="55.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adminko1">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="btnOpenHome" layoutX="29.0" layoutY="95.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnOpenHome" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Главная" textFill="#545454">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="btnEditEmployee" layoutX="306.0" layoutY="487.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnEditEmployee" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Редактировать" textFill="#545454">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableAboutHuman" layoutX="175.0" layoutY="66.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="675.0" style="-fx-border-style: dashed; -fx-border-color: #545454;">
+            <columns>
+                <TableColumn fx:id="colFIO" maxWidth="186.0" minWidth="156.0" prefWidth="200.0" text="ФИО" />
+                <TableColumn fx:id="colRole" maxWidth="144.0" minWidth="90.0" prefWidth="125.0" text="Роль" />
+                <TableColumn fx:id="colNumberPhone" maxWidth="241.0" minWidth="115.0" prefWidth="135.0" text="номер т." />
+                <TableColumn fx:id="colLogin" maxWidth="181.0" minWidth="77.0" prefWidth="110.0" text="логин" />
+                <TableColumn fx:id="colPassword" maxWidth="189.0" minWidth="0.0" prefWidth="115.0" text="пароль" />
+            </columns>
+        </TableView>
+        <Text fill="#545454" layoutX="175.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Все сотрудники:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+      <Button fx:id="btnDeleteEmployee" layoutX="438.0" layoutY="487.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnDeleteEmployee" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Удалить" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddEmployee" layoutX="175.0" layoutY="487.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnAddEmployee" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Добавить" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelEmployee" layoutX="695.0" layoutY="487.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#btnCancelEmployee" style="-fx-background-radius: 12; -fx-border-color: #545454; -fx-border-radius: 12; -fx-border-style: dashed; -fx-background-color: #F2F2F2;" text="Отмена" textFill="#545454">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
